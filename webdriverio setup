@@ -1,0 +1,28 @@
+
+Open Gitbash >> 
+type node-v  (to check the version of Nodejs)
+
+Installation steps
+npm init
+////////////// webdriver io
+npm install -save-dev webdriverio@4.13.2
+//////////////mocha to structure our framework
+npm install -save-dev mocha@5.2.0
+/////////////selenium standalone for running the scripts, middleman between wdio and browser
+npm install -save-dev selenium-standalone@6.15.3
+/////////////run selenium standalone on machine
+./node_modules/.bin/selenium_standalone install
+//////////// settig the wdio file
+./node_modules/.bin/wdio
+
+
+/////////////running the test
+node filename.js
+
+
+
+////if the 4444 port if busy then, to know what is running on the port
+netstat -ano |findstr:4444
+////to kill the process  
+taskkill / PID 8***(taks no) /F
+
