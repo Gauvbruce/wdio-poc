@@ -1,0 +1,4 @@
+ Error - Unable to load spec files quite likely because they rely on `browser` object that is not fully initialised.
+ -- Unable to find some reference files in the testsjs --hiont check the folder structure and references example 
+const LoginPage = require('../test/pageobjects/login.page');
+const SecurePage = require('../test/pageobjects/secure.page');
