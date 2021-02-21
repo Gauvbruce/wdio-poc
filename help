@@ -44,3 +44,7 @@ mochaOpts: {
     },
  //command to execute the test with Debug mode
  DEBUG=true npm test -- --spec=tests/mytest.js
+ 
+ 
+ //CHrome extension
+ Ranorex Selocity
