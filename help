@@ -26,3 +26,7 @@ else {
 
 //to run it with env
 SERVER=prod npm test
+
+
+//run specific test
+--spec=tests/mytest.js
