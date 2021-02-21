@@ -30,3 +30,17 @@ SERVER=prod npm test
 
 //run specific test
 npm test -- --spec=tests/mytest.js
+
+
+//debug mode
+//command
+browser.debug(); 
+//wdio changes 
+//add variable
+var timeout = process.env.DEBUG ? 99999999 : 10000 ; 
+mochaOpts: {
+        ui: 'bdd',
+        timeout: timeout
+    },
+ //command to execute the test with Debug mode
+ DEBUG=true npm test -- --spec=tests/mytest.js
