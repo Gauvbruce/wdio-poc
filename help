@@ -2,3 +2,12 @@
  -- Unable to find some reference files in the testsjs --hiont check the folder structure and references example 
 const LoginPage = require('../test/pageobjects/login.page');
 const SecurePage = require('../test/pageobjects/secure.page');
+
+to run the test
+npm test 
+
+to run the test with pasing variable
+npm test -- --baseUrl=http://www.google.com 
+after adding a variable in wdio conf file
+var baseUrl = 'https://d5g000004gixpeaw-dev-ed.my.salesforce.com/' ; 
+and making change to baseUrl: baseUrl,
