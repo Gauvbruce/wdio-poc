@@ -3,11 +3,26 @@
 const LoginPage = require('../test/pageobjects/login.page');
 const SecurePage = require('../test/pageobjects/secure.page');
 
-to run the test
+//to run the test
 npm test 
 
-to run the test with pasing variable
+//to run the test with pasing variable
 npm test -- --baseUrl=http://www.google.com 
-after adding a variable in wdio conf file
+//after adding a variable in wdio conf file
 var baseUrl = 'https://d5g000004gixpeaw-dev-ed.my.salesforce.com/' ; 
-and making change to baseUrl: baseUrl,
+//and making change to 
+baseUrl: baseUrl,
+
+//WDIO config change for env variable
+var baseUrl; 
+
+if(process.env.SERVER === 'prod'){
+
+    baseUrl = 'http:www.google.com' ; 
+}
+else {
+    baseUrl = 'https://d5g000004gixpeaw-dev-ed.my.salesforce.com/' ;
+}
+
+//to run it with env
+SERVER=prod npm test
