@@ -1,0 +1,11 @@
+allure-report
+allure-results
+node_modules
+wdio.stag.conf.js
+*.png
+*.jpg
+*.launch.json
+reports/
+tempDownload/
+wdio.conf.js
+wdio.api.conf.js
